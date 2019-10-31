@@ -26,7 +26,7 @@ async function getWeather() {
         iconOneCode = weatherData.weather[0].icon;
         iconAlt = weatherData.weather[0].description;
         img.alt = iconAlt;
-        img.src = `https://cors-anywhere.herokuapp.com/http://openweathermap.org/img/wn/${iconOneCode}@2x.png`
+        img.src = `http://openweathermap.org/img/wn/${iconOneCode}@2x.png`
         description.textContent = weatherData.weather[0].description.toUpperCase();
         temperature.textContent = Math.floor(weatherData.main.temp) + '°F';
         
