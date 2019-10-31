@@ -6,9 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c989329b9e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="search-container">
+        <input type="text" name="cityLookup" id="cityLookup" placeholder="Enter a city name...">
+        <button class="searchBtn">
+                <i class="fas fa-search"></i>
+        </button>
+    </div>
     
+    <div class="weather-container">
+        <p class="location"></p>
+
+        <div class="data-container">
+            <div class="icon-container">
+                <img src="#" alt="icon">
+                <p class="weather-description"></p>
+            </div>
+
+            <div class="weather-temperature">
+                <p class="temperature"></p>
+                <span class="high-low"></span>
+                <p class="humidity"></p>
+                <p class="cloud-cover"></p>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
