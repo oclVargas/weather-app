@@ -16,7 +16,7 @@ async function getWeather() {
             return 
         }
         console.log(city);
-        const weather = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=29769ab6214b9aed72cf77646d756221`, { mode: 'cors' });
+        const weather = await fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&APPID=29769ab6214b9aed72cf77646d756221`, { mode: 'cors' });
         if (weather.status === 404) {
             location.textContent = 'Pls input valid city name';
             return
